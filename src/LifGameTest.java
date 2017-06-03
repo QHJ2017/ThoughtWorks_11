@@ -1,4 +1,8 @@
+import com.sun.corba.se.impl.orbutil.graph.Graph;
 import org.junit.Test;
+
+import java.awt.*;
+import java.util.Scanner;
 
 /**
  * Created by shaobin on 2017/6/3.
@@ -78,6 +82,20 @@ public class LifGameTest {
 
 	@Test
 	public void diaplay_test() {
+		// 显示棋盘界面。
 		Checkerboard checkerboard = new Checkerboard();
+		Scanner in = new Scanner(System.in);
+		int i = in.nextInt();
+	}
+
+	@Test
+	public void loop_100_times(){
+		// 100次刷新。
+		int[][] board = {{1, 1, 0}, {1, 0, 0}, {0, 0, 0}};//new int[6][6];
+	}
+
+	@Test
+	public void control_time(){
+		double time = 0.5;
 	}
 }

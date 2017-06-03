@@ -1,52 +1,112 @@
+
+
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
+import java.util.Random;
 
 /**
  * Created by ArtistQiu on 2017/6/3.
  */
 public class Checkerboard extends JFrame {
+	String state = "随机";
+	double speed = 1.0;
+	String color = "蓝色";
+	String method = "自动";
+	int size = 10;
 
-    Board myboard = new Board(10);
-    //定西西洋棋盘格名称大小
-    public Checkerboard() {
-        //西洋棋盘格名称
-        super("西洋棋盘格");
-        //西洋棋盘格大小
-        setSize(1000, 800);
-        setVisible(true);
-        JTextArea area = new JTextArea();
-        super.add(area);
-        area.setLocation(820,400);
-        area.setVisible(true);
-    }
+    Board myboard = new Board(size);
+    int width_ract = 800 / size;
 
-    public void paint(Graphics g) {//调用超类的绘制方法
+
+	public Checkerboard() {
+		setTitle("棋盘格");
+		//棋盘格大小
+		setSize(800, 800);
+		setVisible(true);
+	}
+
+	public Checkerboard(String in_state,double in_speed,String in_color,String in_method,int in_size) {
+		myboard = new Board(in_size);
+		state = in_state;
+		speed = in_speed;
+		color = in_color;
+		method = in_method;
+		size = in_size;
+		width_ract = 800 / size;
+		setTitle("棋盘格");
+		//棋盘格大小
+		setSize(800, 800);
+		setVisible(true);
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./source/temp.txt"),true));
+			for (int i = 0; i < size; i++) {
+				for (int j = 0; j < size; j++) {
+					writer.write(myboard.board[i][j]);
+					if (j != size - 1) {
+						writer.write(",");
+					}
+				}
+				writer.write("\r\n");
+			}
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Checkerboard (String filename,int size) {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(new File("./source/temp.txt")));
+			int[][] temp = new int[size][size];
+			String line = reader.readLine();
+			int i = 0;
+			while (line != null) {
+				String[] split = line.split(",");
+				for (int j = 0; j < size; j++) {
+					temp[i][j] = Integer.valueOf(split[j]);
+				}
+				i++;
+			}
+			reader.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void paint(Graphics g) {//调用超类的绘制方法
         super.paint(g);
         //绘制一个白色背景
-        g.setColor(new Color(255, 255, 225));
+        g.setColor(new Color(255, 255, 255));
         g.fillRect(0, 0, 800, 800);
         //绘制棋盘格
         g.setColor(new Color(35, 140, 220));
-        for (int i = 0; i <= 10; i++) {//y方向循环,循环8行
-            if (i % 2 != 0) {//1，3，5，7行判断
-                for (int j = 1; j <= 10; j++) {//x方向循环，绘制基数行黑框
-                    if (j % 2 == 0) {
-                        g.fillRect((j - 1) * 80, (i - 1) * 80, 80, 80);
-                    }
-                }
-            } else {//2，4，6，8行段
-                for (int j = 1; j <= 10; j++) {
-                    if (j % 2 != 0) {//x方向循环，绘制偶数行黑框
-                        g.fillRect((j - 1) * 80, (i - 1) * 80, 80, 80);
-                    }
-                }
-            }
-        }
+
+        Random random = new Random();
+        int k = 0;
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < size; j++) {
+				if (myboard.board[i][j] == 1) {
+					random.setSeed(k++);
+//                    g.setColor(new Color((int)(random.nextDouble() * 255) % 255, (int)(random.nextDouble() * 255) % 255, (int)(random.nextDouble() * 255) % 255));
+					g.fillRect(j * width_ract,i * width_ract,width_ract - 3,width_ract - 3);
+				}
+			}
+		}
+
+        myboard.life_game();
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws InterruptedException {
         Checkerboard application = new Checkerboard();
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        int i = 0;
+        while (true) {
+            Thread.sleep(1000);
+            application.repaint(100,0,0,800,800);
+        }
     }
 }
 
