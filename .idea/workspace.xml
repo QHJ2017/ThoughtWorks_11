@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/UnitCell.java" line="94" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="618cf421-0810-4737-bac0-ba04b45adc00" name="Default" comment="" />
+    <list default="true" id="618cf421-0810-4737-bac0-ba04b45adc00" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.java" afterPath="$PROJECT_DIR$/src/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LifGameTest.java" afterPath="$PROJECT_DIR$/src/LifGameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UnitCell.java" afterPath="$PROJECT_DIR$/src/UnitCell.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +27,7 @@
       <file leaf-file-name="LifGameTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LifGameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="865">
+            <state relative-caret-position="1914">
               <caret line="66" column="15" lean-forward="false" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
               <folding />
             </state>
@@ -39,8 +47,8 @@
       <file leaf-file-name="UnitCell.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UnitCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1322">
-              <caret line="94" column="25" lean-forward="true" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+            <state relative-caret-position="887">
+              <caret line="105" column="21" lean-forward="false" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -54,6 +62,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -86,6 +97,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -101,6 +113,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,8 +143,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -679,7 +691,8 @@
       <updated>1496391456725</updated>
       <workItem from="1496391459207" duration="358000" />
       <workItem from="1496453482351" duration="6585000" />
-      <workItem from="1496460595039" duration="17000" />
+      <workItem from="1496460595039" duration="1016000" />
+      <workItem from="1496463695492" duration="88000" />
     </task>
     <servers />
   </component>
@@ -716,10 +729,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6960000" />
+    <option name="totallyTimeSpent" value="8047000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="7" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -731,12 +744,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19296375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -761,7 +774,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -770,6 +783,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/LifGameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="66" column="15" lean-forward="false" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnitCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LifGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1914">
@@ -804,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LifGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
+        <state relative-caret-position="1914">
           <caret line="66" column="15" lean-forward="false" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
           <folding />
         </state>
@@ -812,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UnitCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1322">
-          <caret line="94" column="25" lean-forward="true" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+        <state relative-caret-position="887">
+          <caret line="105" column="21" lean-forward="false" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
           <folding />
         </state>
       </provider>

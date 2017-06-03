@@ -105,11 +105,8 @@ public class UnitCell {
 		if(count == 3){
 			self = 1;
 		}
-		else if(count == 2){
-			self = self;
-		}
-		else{
-			self =0;
+		else if(count != 2){
+			self = 0;
 		}
 		return self;
 	}

@@ -67,4 +67,17 @@ public class LifGameTest {
 		board.display();
 	}
 
+	@Test
+	public void funcation_test() {
+		Board board = new Board(10);
+		board.display();
+		board.life_game();
+		System.out.println("Answer:");
+		board.display();
+	}
+
+	@Test
+	public void diaplay_test() {
+		Checkerboard checkerboard = new Checkerboard();
+	}
 }

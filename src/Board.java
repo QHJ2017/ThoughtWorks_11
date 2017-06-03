@@ -21,4 +21,18 @@ public class Board {
 		}
 		System.out.println();
 	}
+
+	public void life_game () {
+		int[][] ans = new int[board.length][board.length];
+		for (int i = 0; i < board.length; i++) {
+			for (int j = 0; j < board.length; j++) {
+				ans[i][j] = new UnitCell(board,i,j).judge();
+			}
+		}
+		for (int i = 0; i < board.length; i++) {
+			for (int j = 0; j < board.length; j++) {
+				board[i][j] = ans[i][j];
+			}
+		}
+	}
 }
